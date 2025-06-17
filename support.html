@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: url('https://wallpapercave.com/wp/wp9943338.jpg') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #999;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding-top: 60px;
+    }
+
+    .form-box {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .form-box h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-box label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+
+    .form-box input,
+    .form-box textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: none;
+      border-radius: 6px;
+      background: #222;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .form-box input:focus,
+    .form-box textarea:focus {
+      outline: 2px solid #999;
+    }
+
+    .form-box button {
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 0.9rem;
+      background: white;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-box button:hover {
+      background: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .form-box {
+        padding: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">SpaceX</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="launches.html">Launches</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form -->
+  <div class="contact-container">
+    <div class="form-box">
+      <h1>Contact Us</h1>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your full name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email address" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

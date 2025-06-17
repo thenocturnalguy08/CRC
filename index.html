@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpaceX </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden; /* Prevent scrolling */
+      font-family: 'Helvetica Neue', sans-serif;
+      color: white;
+    }
+
+    body {
+      background-image: url('https://wallpapercave.com/wp/wp15270867.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(123, 123, 123, 0.6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #ccc;
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 80px;
+    }
+
+   
+    .content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: white;
+      color: black;
+      padding: 0.8rem 2rem;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+     
+
+      .content h1 {
+        font-size:39px;
+      }      
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/SpaceX_Logo_Black.png/1200px-SpaceX_Logo_Black.png" alt="bootstrap " width="300"></a>
+    </div>
+    <ul>
+      <li><a href="https://www.spacex.com/">Home</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="launches.html">Launches</a></li>
+      <li><a href="support.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="overlay">
+    <div class="content">
+      <h1>EXPLORE SPACE</h1>
+      <p>The future of space exploration starts here with advanced rockets, reusable technology, and interplanetary goals.</p>
+      <a href="get started.html" class="btn">Get Started</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #000;
+      color: white;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #999;
+    }
+
+    .hero {
+      background: url('https://wallpapercave.com/wp/wp14044106.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    .missions-container {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .mission-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mission-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .mission-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .mission-card img {
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.8);
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">SpaceX</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="launches.html">Launches</a></li>
+      <li><a href="mission.html">Mission</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Our Mission</h1>
+  </section>
+
+  <!-- Mission Sections -->
+  <section class="missions-container">
+    <div class="mission-card">
+      <h2>Making Life Multiplanetary</h2>
+      <p>SpaceX’s ultimate goal is to enable human life on Mars. By developing fully reusable launch vehicles and deep-space transport, SpaceX is laying the foundation for interplanetary civilization.</p>
+      <img src="https://wallpapercave.com/wp/wp2461878.jpg" alt="Mars Mission">
+    </div>
+
+    <div class="mission-card">
+      <h2>Starlink Global Internet</h2>
+      <p>Starlink is a satellite internet constellation designed to deliver high-speed broadband to underserved and remote areas across the globe using thousands of low-Earth orbit satellites.</p>
+      <img src="https://imgs.search.brave.com/2VhZKJmb2rXMq9KogZ_iEkJDU66A5Vm1V-IKEzs8kEQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L3NF/b2V5dlViWkNFU2FS/Yk13TlhHUGkuanBn" alt="Starlink Satellite Mission">
+    </div>
+
+    <div class="mission-card">
+      <h2>NASA Partnerships</h2>
+      <p>SpaceX regularly collaborates with NASA to launch cargo and astronauts to the ISS under the Commercial Crew and Commercial Resupply Services programs, contributing to low-Earth orbit research and development.</p>
+      <img src="https://wallpapercave.com/fuwp-510/uwp4758943.png" alt="NASA Crew Mission">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 SpaceX . All Rights Reserved.
+  </footer>
+
+</body>
+</html>
